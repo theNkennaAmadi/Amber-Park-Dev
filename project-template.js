@@ -1,7 +1,5 @@
 const categories = [...document.querySelectorAll("[data-name]")];
-console.log(categories);
 categories.forEach((category) => {
-  console.log(category.getAttribute("data-name"));
   if (category.getAttribute("data-name").toLowerCase() === "creative") {
     document.querySelector("[data-view]").href = "/creative";
   } else if (category.getAttribute("data-name").toLowerCase() === "film") {
@@ -10,6 +8,7 @@ categories.forEach((category) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  /*
   var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy-video"));
 
   if ("IntersectionObserver" in window) {
@@ -54,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       lazyVideo.load();
     });
   }
+   */
 
   /**
    * Play and pause videos in view
